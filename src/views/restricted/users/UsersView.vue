@@ -351,7 +351,7 @@ async function openEditModal(user) {
       loadVehicle(user.id)
     ]);
   } catch (error) {
-    console('Erro ao carregar dados:', 'error');
+    console.log('Erro ao carregar dados:', 'error');
   }
   try {
     const vehicleResponse = await VehicleService.getVehicleByUserId(user.id);
