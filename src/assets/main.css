@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 100;
+        src: local(''),  url('../fonts/Poppins-Thin.woff') format('woff');
+    } 
+
+    @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 200;
+        src: local(''),  url('../fonts/Poppins-ExtraLight.woff') format('woff');
+    }
+    
+    @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        src: local(''),  url('../fonts/Poppins-Light.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        src: local(''),  url('../fonts/Poppins-Regular.woff') format('woff');
+    }
+    
+    @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        src: local(''),  url('../fonts/Poppins-Medium.woff') format('woff');
+    }
+    
+    @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        src: local(''),  url('../fonts/Poppins-SemiBold.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        src: local(''),  url('../fonts/Poppins-Bold.woff') format('woff');
+    }
+    
+    @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 800;
+        src: local('Poppins ExtraBold'),  url('../fonts/Poppins-ExtraBold.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 900;
+        src: local(''),  url('../fonts/Poppins-Black.woff') format('woff');
+    }
+}
+
+/* Aplica a customização a todos os elementos com overflow visível */
+* {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #90C9F9 #fff; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+  height: 12px; /* Altura da barra de rolagem horizontal */
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #fff; /* Cor de fundo */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #90C9F9; /* Cor do "polegar" */
+  border-radius: 6px; /* Bordas arredondadas */
+  border: 3px solid #fff; /* Espaço ao redor do polegar */
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #90C9F9; /* Cor do polegar quando pressionado */
+}
